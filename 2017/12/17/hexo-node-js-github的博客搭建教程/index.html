@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>hexo+node.js+github的博客搭建教程 | xiaoyu</title>
+  <meta name="description" content="" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="/css/component.css" />
+  <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+  <meta name="generator" content="xiaoyu">
+  <script src="http://static.duoshuo.com/embed.js"></script>
+  
+  
+  
+
+  
+
+</head>
+<body>
+<div class="container">
+    <div class="mp-pusher" id="mp-pusher">
+        <i id="scroll-up" class="fa fa-angle-up"></i>
+        <nav id="mp-menu" class="mp-menu">
+            <div class="mp-level">
+                <a data-pjax class="back-home" style="font-size: 20px" href="/"><h2 ><i class="fa fa-home"></i>
+                        Home</h2></a>
+                <ul class="first-level">
+                    <li>
+                        <a class="fa fa-archive" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Archive</a>
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-archive"></i>
+                                Archive</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-archive" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2017/12/17/hexo-node-js-github的博客搭建教程/">hexo+node.js+github的博客搭建教程</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2017/12/17/c语言-qsort-函数的一些理解/">c语言 qsort() 函数的一些理解</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2017/07/24/第三期Task-LeetCode算法题/">第三期Task-LeetCode算法题</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2017/06/28/hello-world/">Hello World</a>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="fa fa-copy" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Categories</a>
+
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-copy"></i>
+                                Categories</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-category" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="fa fa-tags" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Tags</a>
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-tags"></i>
+                                Tags</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-tag" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="mp-pjax"><a class="fa fa-user" href="/about">&nbsp;&nbsp;&nbsp;About me</a></li>
+                    <li><a class="fa fa-github" href="#">&nbsp;&nbsp;&nbsp;Github</a></li>
+
+                </ul>
+
+            </div>
+        </nav>
+        <div id="pjax">
+            <div class="pjax-hidden" style="display: none">
+                
+                    <a  data-pjax href="/2017/12/17/hexo-node-js-github的博客搭建教程/">hexo+node.js+github的博客搭建教程</a>
+                
+                    <a  data-pjax href="/2017/12/17/c语言-qsort-函数的一些理解/">c语言 qsort() 函数的一些理解</a>
+                
+                    <a  data-pjax href="/2017/07/24/第三期Task-LeetCode算法题/">第三期Task-LeetCode算法题</a>
+                
+                    <a  data-pjax href="/2017/06/28/hello-world/">Hello World</a>
+                
+                
+                
+                <a data-pjax class="fa fa-user" href="/about">&nbsp;&nbsp;&nbsp;About me</a>
+            </div>
+            <nav class="nexus">
+                <li  style="border-left: 1px solid #c6d0da;">
+                    <a id="trigger" href="#"><i class="fa fa-bars"></i></a>
+                </li>
+                <li ><a id="nexus-back" data-pjax href="/">xiaoyu</a></li>
+                
+                <div id="nav-container">
+                    <div class="post-navbar" style="line-height: 63px;display:none">
+                        <li id="navbar-title"><a href="#">hexo+node.js+github的博客搭建教程</a></li>
+                        <li id="navbar-toc" style="border-left: none">
+                            <a style="padding-right: 15px">
+                                <span id="toc-content" >Introduction</span><i class="fa fa-chevron-down" ></i>
+                            </a>
+                            <div class="hidden-box">
+                                <ul id="toc"></ul>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+                
+            </nav>
+
+            <div class="scroller">
+            <div class="scroller-inner">
+
+
+<!-- -->
+<!--<body class="post-template">-->
+<!---->
+  
+
+<main class="content" role="main">
+    <article class="post" >
+    <span class="post-meta">
+                  <div class="tag-tile">
+                      
+                  </div>
+                <h1 class="post-title" style="margin: 14px 0;color:#50585D">hexo+node.js+github的博客搭建教程</h1>
+
+                    <div class="post-meta">
+                        Post on<span class="fa fa-clock-o"></span>
+                        <time datetime="2017-12-17T09:51:18.000Z"
+                              itemprop="datePublished">2017-12-17</time>
+                    </div>
+    </span>
+
+        <section class="post-content">
+            <h1 id="菜的一批的hexo-node-js-github搭建个人博客的教程"><a href="#菜的一批的hexo-node-js-github搭建个人博客的教程" class="headerlink" title="菜的一批的hexo+node.js+github搭建个人博客的教程"></a>菜的一批的hexo+node.js+github搭建个人博客的教程</h1><hr>
+<h2 id="hexo大概的原理"><a href="#hexo大概的原理" class="headerlink" title="hexo大概的原理"></a><strong>hexo大概的原理</strong></h2><p>hexo基于node.js框架，可以通过简单的命令生成一个静态的html页面<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo generate</div><div class="line">hexo g</div></pre></td></tr></table></figure></p>
+<p>以及通过读取配置文件中的信息一键化部署到github<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo deploy</div><div class="line">hexo d</div></pre></td></tr></table></figure></p>
+<p>我们需要做的只有配置好hexo环境，然后使用命令来生成新文章<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo new &quot;文章标题&quot;</div><div class="line">hexo n &quot;文章标题&quot;</div></pre></td></tr></table></figure></p>
+<p>注意hexo生成的是静态页面，也就是说其实所有的网页生成在generate的时候就已经完成，每次对文章有改动，都必须重新generate，然后再部署到github，这个时候博客才会更新。</p>
+<h2 id="node-js环境"><a href="#node-js环境" class="headerlink" title="node.js环境"></a><strong>node.js环境</strong></h2><p><a href="https://nodejs.org/en/" target="_blank" rel="external">node.js官网</a><br><a href="http://nodejs.cn/" target="_blank" rel="external">node.js国内镜像（好像是阿里爸爸的）</a><br>推荐用阿里爸爸的，毕竟比较快。。</p>
+<h3 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h3><p>win就是懒人操作嘛，，下载–解压–安装–疯狂点next，连环境变量都帮你配好</p>
+<h3 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h3><p>我对linux不算是特别熟悉，命令可能有错，你们谨慎Ctrl c+v</p>
+<p>先下载<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget https://npm.taobao.org/mirrors/node/v8.9.0/node-v8.9.0-linux-x64.tar.xz</div></pre></td></tr></table></figure></p>
+<p>然后解压<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">tar xvf node-v8.9.0-linux-x64.tar.xz</div></pre></td></tr></table></figure></p>
+<p>然后就安装完成了，不过这个时候node命令的环境变量还没有配置，这个配置就自己百度/Google吧，方法有好多种</p>
+<h3 id="Mac"><a href="#Mac" class="headerlink" title="Mac"></a>Mac</h3><p>ummm个人猜测和Linux差不多</p>
+<h3 id="检查安装"><a href="#检查安装" class="headerlink" title="检查安装"></a>检查安装</h3><p>在命令行里面输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">node -v</div><div class="line">npm -v</div></pre></td></tr></table></figure></p>
+<p>如果查看到了版本号，那就说明安装+配置完毕了，可以开始使用hexo了。</p>
+<h2 id="hexo下载"><a href="#hexo下载" class="headerlink" title="hexo下载"></a><strong>hexo下载</strong></h2><p>首先，找一个看起来比较顺眼的文件夹，我们在这个文件夹里面放我们的hexo和blog</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">npm install hexo-cli -g</div><div class="line">npm install hexo --save</div><div class="line">hexo -v</div></pre></td></tr></table></figure>
+<p>依次键入以上命令后，可以看见hexo的一些版本信息</p>
+<p>接下来生成blog<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init blog</div></pre></td></tr></table></figure></p>
+<p>然后进入blog目录<br>继续输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install</div></pre></td></tr></table></figure></p>
+<p>npm install命令会根据json配置文件自动安装所需的库。</p>
+<p>这个时候就已经完成了，然后我们就可以生成blog页面<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo g</div><div class="line">hexo d</div><div class="line">hexo s</div></pre></td></tr></table></figure></p>
+<p>注意hexo s命令是在本地建立服务器，根据提示的网址进行访问，我们就可以看见这个网页了。（当然，hexo s命令被终止了我们就看不见了）</p>
+<p>一般来说，这个服务器监听的端口是4000，在浏览器中尝试访问一下这个端口</p>
+<p><a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a></p>
+<p>可以看见自己的博客了。</p>
+<h2 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a><strong>部署到github</strong></h2><p>其实也可以部署到其他地方，因为静态网页已经生成了，要做的只是让他可以被获取到。</p>
+<h3 id="配置github-pages"><a href="#配置github-pages" class="headerlink" title="配置github pages"></a>配置github pages</h3><p>首先需要一个存放hexo页面的仓库</p>
+<p>这里我们new一个，记住这个仓库的命名方式必须是  “用户名”+”.github.io”<br>（比如我的用户名是xiaoyuoshu，这里仓库名就应该是xiaoyuoshu.github.io）</p>
+<p>然后点击这个仓库的settings，在option菜单里下拉找到github pages，然后开启Automatic page generator。<br>这个时候访问<a href="https://xiaoyuoshu.github.io/应该就可以访问成功。（请改成你自己的用户名，谢谢）" target="_blank" rel="external">https://xiaoyuoshu.github.io/应该就可以访问成功。（请改成你自己的用户名，谢谢）</a></p>
+<h3 id="配置deploy-config"><a href="#配置deploy-config" class="headerlink" title="配置deploy config"></a>配置deploy config</h3><p>这个时候我们已经有了两个资源，1.我们本地的博客静态html。2.一个可以访问并获取到静态html的github仓库。<br>现在要做的就是把本地的上传到github上。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure></p>
+<p>先安装deploy到github上的node扩展。<br>在blog目录下打开_config.yml文件（yml里面不要随便打空格和回车和换行，格式要求极其严格。）然后下拉，找到最底下的deploy,按照如下格式修改他，还是记住把所有的我的用户名换成你的！！！<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: git@github.com:xiaoyuoshu/xiaoyuoshu.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
+<p>然后保存这个文件。<br>我们再使用<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d</div></pre></td></tr></table></figure></p>
+<p>就可以部署到github了，这个时候再打开博客的链接，就可以看见自己的博客了。</p>
+<h2 id="写文章"><a href="#写文章" class="headerlink" title="写文章"></a>写文章</h2><p>写文章使用的是markdown语法。<br>这里我们先在blog目录下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new &quot;文章标题&quot;</div></pre></td></tr></table></figure></p>
+<p>然后<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd source</div><div class="line">cd _posts</div></pre></td></tr></table></figure></p>
+<p>这个目录就是我们的文章目录了<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">dir</div></pre></td></tr></table></figure></p>
+<p>我们就可以看见我们的所有文章了，这个时候应该有一个helloworld.md和一个我们新建的文章标题.md</p>
+<p>使用文本编辑器打开这个新的文章标题.md文件，可以看到开头是一段配置，不用管。</p>
+<p>把写好的markdown文本复制到配置之后，保存</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo g</div><div class="line">hexo d</div></pre></td></tr></table></figure>
+<p>就可以看见我们的文章了。</p>
+<h2 id="gaoji配置"><a href="#gaoji配置" class="headerlink" title="gaoji配置"></a><strong>gaoji配置</strong></h2><h3 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h3><p>嫌博客页面太丑怎么办，，我们来换个主题吧。</p>
+<p>首先，默认的主题都是存在themes目录下的，有几个主题就有几个文件夹。<br>这个主题就自己去网上找吧，蛮多的，甚至还有二刺猿主题？？？</p>
+<p>下载好之后，还是进入_config.yml文件<br>找到这一段<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"># Extensions</div><div class="line">## Plugins: https://hexo.io/plugins/</div><div class="line">## Themes: https://hexo.io/themes/</div><div class="line">theme: kael</div></pre></td></tr></table></figure></p>
+<p>这里我的主题是kael，假设要换成landscape，就把kael替换掉就可以了。注意冒号和主题名之间有一个空格，这个空格别删掉了。</p>
+<p>然后<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean</div><div class="line">hexo d</div><div class="line">hexo s</div></pre></td></tr></table></figure></p>
+<p>就可以看见更换后的主题啦。</p>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>其他的功能我也没怎么多用，不敢细讲，不过谷歌和百度上超多教程。我就列举一下吧。</p>
+<ol>
+<li>配置域名，如果嫌带github.io的域名太low，可以自己去买一个域名，然后解析到github给你分配的ip</li>
+<li>配置文章标签</li>
+<li>配置文章目录</li>
+<li>配置页面中的一些链接</li>
+<li>等等</li>
+</ol>
+<h2 id="其他-1"><a href="#其他-1" class="headerlink" title="其他"></a><strong>其他</strong></h2><p>hexo已经是给小白搭建博客的福音了，希望各位常写博客，不要跟我一样当鸽子。</p>
+<p>在以后能力强大了之后，我们可以自己购买服务器，并使用一些比较火的框架（如worldpress）搭建自己的博客，并实现更多的功能。</p>
+<p>互勉</p>
+
+        </section>
+        <hr/>
+        <nav class="pagination" style="width:auto" role="pagination">
+            
+            <a style="cursor:default" class="newer-posts" href="#">This is the First Post</a>
+            
+            <a class="share-button" data-original-title title>Share this Post</a>
+            
+            <a data-pjax class="older-posts" href="/2017/12/17/c语言-qsort-函数的一些理解/">Next Post →</a>
+            
+        </nav>
+        <br/>
+        <br/>
+        <section id="comment">
+            <div id="comment-box"></div>
+        </section>
+
+
+    </article>
+</main>
+
+
+  
+<footer class="site-footer">
+    
+    <div class="inner">
+        <section class="copyright"><a href="/"></a> &copy; xiaoyu 2014</section>
+        <section class="poweredby">Published with <a target="_blank" href="http://hexo.io/">Hexo   </a> and Theme by <a target="_blank" href="https://github.com/yuche/hexo-theme-kael">Kael</a></section>
+    </div>
+</footer>
+</div>
+</div><!-- /scroller -->
+
+</div><!-- /pusher -->
+</div><!-- /container -->
+</div>
+
+<!-- Easter eggs -->
+
+<div class="egg animated">
+    <a id="close-button" href="#">X</a>
+    <div class="block">
+        <div class="loading">
+            <span class="ball1"></span>
+            <span class="ball2"></span>
+        </div>
+    </div>
+</div>
+  
+<script src="//cdn.staticfile.org/jquery/1.11.0/jquery.min.js"></script>
+<script>
+    if (!window.jQuery) {
+        var script = document.createElement('script');
+        script.src = "/js/jquery.min.js";
+        document.body.appendChild(script);
+    }
+</script>
+<script type="text/javascript" src="/js/lib.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+
+
+
+
+</body>
+</html>
