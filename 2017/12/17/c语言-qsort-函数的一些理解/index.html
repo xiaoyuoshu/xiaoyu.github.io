@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>c语言 qsort() 函数的一些理解 | xiaoyu</title>
+  <meta name="description" content="" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="/css/component.css" />
+  <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+  <meta name="generator" content="xiaoyu">
+  <script src="http://static.duoshuo.com/embed.js"></script>
+  
+  
+  
+
+  
+
+</head>
+<body>
+<div class="container">
+    <div class="mp-pusher" id="mp-pusher">
+        <i id="scroll-up" class="fa fa-angle-up"></i>
+        <nav id="mp-menu" class="mp-menu">
+            <div class="mp-level">
+                <a data-pjax class="back-home" style="font-size: 20px" href="/"><h2 ><i class="fa fa-home"></i>
+                        Home</h2></a>
+                <ul class="first-level">
+                    <li>
+                        <a class="fa fa-archive" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Archive</a>
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-archive"></i>
+                                Archive</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-archive" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2017/12/17/c语言-qsort-函数的一些理解/">c语言 qsort() 函数的一些理解</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2017/07/24/第三期Task-LeetCode算法题/">第三期Task-LeetCode算法题</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2017/06/28/hello-world/">Hello World</a>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="fa fa-copy" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Categories</a>
+
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-copy"></i>
+                                Categories</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-category" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="fa fa-tags" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Tags</a>
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-tags"></i>
+                                Tags</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-tag" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="mp-pjax"><a class="fa fa-user" href="/about">&nbsp;&nbsp;&nbsp;About me</a></li>
+                    <li><a class="fa fa-github" href="#">&nbsp;&nbsp;&nbsp;Github</a></li>
+
+                </ul>
+
+            </div>
+        </nav>
+        <div id="pjax">
+            <div class="pjax-hidden" style="display: none">
+                
+                    <a  data-pjax href="/2017/12/17/c语言-qsort-函数的一些理解/">c语言 qsort() 函数的一些理解</a>
+                
+                    <a  data-pjax href="/2017/07/24/第三期Task-LeetCode算法题/">第三期Task-LeetCode算法题</a>
+                
+                    <a  data-pjax href="/2017/06/28/hello-world/">Hello World</a>
+                
+                
+                
+                <a data-pjax class="fa fa-user" href="/about">&nbsp;&nbsp;&nbsp;About me</a>
+            </div>
+            <nav class="nexus">
+                <li  style="border-left: 1px solid #c6d0da;">
+                    <a id="trigger" href="#"><i class="fa fa-bars"></i></a>
+                </li>
+                <li ><a id="nexus-back" data-pjax href="/">xiaoyu</a></li>
+                
+                <div id="nav-container">
+                    <div class="post-navbar" style="line-height: 63px;display:none">
+                        <li id="navbar-title"><a href="#">c语言 qsort() 函数的一些理解</a></li>
+                        <li id="navbar-toc" style="border-left: none">
+                            <a style="padding-right: 15px">
+                                <span id="toc-content" >Introduction</span><i class="fa fa-chevron-down" ></i>
+                            </a>
+                            <div class="hidden-box">
+                                <ul id="toc"></ul>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+                
+            </nav>
+
+            <div class="scroller">
+            <div class="scroller-inner">
+
+
+<!-- -->
+<!--<body class="post-template">-->
+<!---->
+  
+
+<main class="content" role="main">
+    <article class="post" >
+    <span class="post-meta">
+                  <div class="tag-tile">
+                      
+                  </div>
+                <h1 class="post-title" style="margin: 14px 0;color:#50585D">c语言 qsort() 函数的一些理解</h1>
+
+                    <div class="post-meta">
+                        Post on<span class="fa fa-clock-o"></span>
+                        <time datetime="2017-12-17T08:22:50.000Z"
+                              itemprop="datePublished">2017-12-17</time>
+                    </div>
+    </span>
+
+        <section class="post-content">
+            <h1 id="qsort函数与mysort函数详解"><a href="#qsort函数与mysort函数详解" class="headerlink" title="qsort函数与mysort函数详解"></a>qsort函数与mysort函数详解</h1><hr>
+<p>菜鸡的我来发教程啦。</p>
+<p>##<strong>1.如何使用qsort</strong><br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">compare</span><span class="params">(<span class="keyword">const</span> <span class="keyword">void</span>* a, <span class="keyword">const</span> <span class="keyword">void</span>* b)</span> </span>&#123; <span class="keyword">return</span> *(<span class="keyword">int</span>*)a - *(<span class="keyword">int</span>*)b; &#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">	<span class="keyword">int</span> nums1[] = &#123;<span class="number">1</span>, <span class="number">489</span>, <span class="number">4591</span>, <span class="number">189</span>, <span class="number">123</span>, <span class="number">189</span>, <span class="number">56</span>, <span class="number">6</span>&#125;;</div><div class="line">	qsort(nums1, <span class="keyword">sizeof</span>(nums1) / <span class="keyword">sizeof</span>(<span class="keyword">int</span>), <span class="keyword">sizeof</span>(<span class="keyword">int</span>), compare);</div><div class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="keyword">sizeof</span>(nums1) / <span class="keyword">sizeof</span>(<span class="keyword">int</span>); i++)</div><div class="line">	&#123;</div><div class="line">		<span class="built_in">printf</span>(<span class="string">"%d "</span>, nums1[i]);</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>先看compare函数，传入了两个void<em>指针，但是交换的时候使用了(int </em>)a的强制类型转换。至于为什么，先放一放。</p>
+<p>然后是qsort使用，这个上次的邮件里已经写了，我就不赘述了。</p>
+<p>注意sizeof(nums1) / sizeof(int)可以获取所需的数组的长度。</p>
+<p>##<strong>2.关于void*指针</strong><br>先看一下基本的内容，可能有错，但是对理解没什么影响。</p>
+<blockquote>
+<p>1.指针有四个相关的参数：a.自己的名字。b.自己本身的地址。c.储存的、也就是指向的地址。d.指向的变量的类型。</p>
+<p>2.现在如果int a有4个字节，也就是32位，那么int<em> p = &amp;a，那么首先p指向的地址是a的<em>*第一个字节的地址</em></em>。</p>
+<p>3.继续，当p++时，p会跳过几个字节呢？答案是<strong>四个</strong>，也就是说现在p指向a的最后一个字节的后一个字节。</p>
+</blockquote>
+<p>也就是说，指针需要知道自己指向的变量的地址，还要知道<strong>指向的变量的长度</strong>，这个长度一方面是为了做<strong>++</strong>的操作，另一方面是为了<strong>解引用</strong>（如*p=1）时，能够获取到完整的变量。</p>
+<p>好了，现在回到void<em>，先明确一点：void</em>指针是没有“指向变量的类型”这个参数的。</p>
+<p>所以：<strong>1.void<em>不允许自增，2.void</em>不允许解引用</strong></p>
+<p>##<strong>3.回到compare函数</strong><br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">compare</span><span class="params">(<span class="keyword">const</span> <span class="keyword">void</span>* a, <span class="keyword">const</span> <span class="keyword">void</span>* b)</span> </span>&#123; </div><div class="line">    <span class="keyword">return</span> *(<span class="keyword">int</span>*)a - *(<span class="keyword">int</span>*)b; </div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>传入了两个常量void<em>指针a，b，这个函数要做的就是比较待排序元素。<br>因为这里我要排序的是int数组，所以使用(int</em>)a，把a变成一个int<em>类型的指针，这样子a就拥有了指向的变量的长度这个参数，然后</em>(int<em>)a，对(int</em>)a解引用，获取那个int类型的值。b同理。然后比较a和b的大小。注意，在compare函数中，要求compare返回的值的格式为：a要排在b后面，则a&gt;b时返回正值，反之同理。</p>
+<p>##<strong>4.如何实现自己的mysort函数</strong><br>先看mysort函数原型<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">void mysort(void* base, size_t num, size_t size, int(*comparator)(const void*, const void*)) ;</div></pre></td></tr></table></figure></p>
+<p>可以发现，为了让mysort函数可以排序任意的类型的数组，就必须让base这个参数为void<em>，因为任意的指针都可以赋值给void</em>指针。</p>
+<p>但是现在问题来了，我们手里只有三个值，没有<strong>保存变量类型的基地址base</strong>，<strong>待排序的元素数量num</strong>，<strong>待排序的元素的类型所占的字节大小size</strong>。</p>
+<p>主要要实现以下三点：1.把每个待排序的元素区分开来。2.实现待排序元素之间的交换。3.实现待排序元素之间的比较。</p>
+<p>这三点按理来说都是需要知道待排序元素的类型的，但是mysort是获取不到的。（其中第三点因为比较是使用compare函数实现的，而用户自定义的compare函数，用户肯定是知道元素类型的，这个可以不用烧脑了）</p>
+<p>先看一段普通的带参选择排序<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; num; i++) &#123;</div><div class="line">		key = i;</div><div class="line">		<span class="keyword">for</span> (j = i + <span class="number">1</span>; j &lt; num; j++) &#123;</div><div class="line">			<span class="keyword">if</span> (nums[key]&gt;nums[j]) &#123;</div><div class="line">				key = j;</div><div class="line">			&#125;</div><div class="line">			<span class="keyword">if</span> (key != i) &#123;</div><div class="line">                <span class="keyword">int</span> temp = nums[key];</div><div class="line">                nums[key] = nums[i];</div><div class="line">                nums[i] = temp; </div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">	&#125;</div></pre></td></tr></table></figure></p>
+<p>对比刚才要实现的三点，我们可以发现重点在第4行和第8-10行。</p>
+<p>先上一段代码<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; num; i++) &#123;</div><div class="line">		key = i;</div><div class="line">		<span class="keyword">for</span> (j = i + <span class="number">1</span>; j &lt; num; j++) &#123;</div><div class="line">			<span class="keyword">if</span> (comparator((<span class="keyword">char</span>*)base + size * key, (<span class="keyword">char</span>*)base + size * j) &gt; <span class="number">0</span>) &#123;</div><div class="line">				key = j;</div><div class="line">			&#125;</div><div class="line">			<span class="comment">// 进行交换</span></div><div class="line">			<span class="keyword">if</span> (key != i) &#123;</div><div class="line">				exchangeVoid((<span class="keyword">char</span>*)base + size * key, (<span class="keyword">char</span>*)base + size * i, size);</div><div class="line"></div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">	&#125;</div></pre></td></tr></table></figure></p>
+<p>其中exchangeVoid()函数定义如下。（此处征得sya同学的同意，偷懒的我直接用他写好的代码了）<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">exchangeVoid</span><span class="params">(<span class="keyword">void</span> * from, <span class="keyword">void</span> *  to, <span class="keyword">size_t</span> size)</span> </span>&#123;</div><div class="line">	<span class="keyword">char</span> * fromPtr = (<span class="keyword">char</span> *)from;</div><div class="line">	<span class="keyword">char</span> * toPtr = (<span class="keyword">char</span> *)to;</div><div class="line">	<span class="keyword">char</span> temp;</div><div class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; (<span class="keyword">int</span>)size; i++) &#123;</div><div class="line">		temp = *(fromPtr + i);</div><div class="line">		*(fromPtr + i) = *(toPtr + i);</div><div class="line">		*(toPtr + i) = temp;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>先来解决第四行的问题，也就是使用comparator()来比较。</p>
+<p>comparator()函数需要拿到已经分开的两个待排序的元素（这里只用把待排序的元素的void*地址传过去即可，因为在comparator()函数里已经实现了强制类型转换）</p>
+<p>这一步呢，应该是比较nums[key]和nums[j]的大小，所以使用了<strong>(char<em>)base + size </em> key</strong>来拿到nums[key]，nums[j]同理。</p>
+<p>现在先暂停一下，看看为什么要突然使用一个char*。</p>
+<p>回忆一下char的大小，是一个字节，而c语言中没有半个字节的变量，所以可以把char的大小当成单位长度。</p>
+<p>所以我们先把base指针变成单位长度的指针，然后加上size*key，跳过key个size，拿到nums[key]。（推荐在草稿纸上画一个图来理解）。这里假如待排序的是整数，那么size就是4个单位长度。</p>
+<p>实际上如果编译器6一点，可以直接这样写：<strong>base + size * key</strong>，但是推荐还是加上char*强制类型转换，比较稳妥。</p>
+<p>好了第一个问题解决了，我们继续解决下一个问题：交换。</p>
+<p>我们还是使用char*这个骚操作来完成。</p>
+<p>现在先好好读一下sya大佬的exchangeVoid()函数，同样使用了类似上一步的方法，拿到了nums[key]和nums[i]。</p>
+<p>但是这个函数与comparator()函数不同的是，这个函数不是由用户自定义的，也就是说需要适应所有的可能的数据类型，并对他们交换。</p>
+<p>怎么做呢？其实第一部里面的(char *)理解了，这一步也就显而易见了。</p>
+<p>假设现在有待排序元素是有46个字节大小（这个字节大小通过size参数获得）的结构体。同样，把这个结构体拆分成46个单位长度（也就是46个char）。</p>
+<p>然后我们就有了第一组拆分成46个char的结构体，和第二组46个char的结构体，然后要实现他们的交换。显而易见，一次把第一个char和第一个char交换、把第二个char和第二个char交换······</p>
+<p>这样我们就实现了比较和交换，就可以用来排序啦！</p>
+<p>##<strong>5.memcpy函数</strong><br>先看百度百科：</p>
+<blockquote>
+<p>void <em>memcpy(void </em>dest, const void *src, size_t n);<br>从源src所指的内存地址的起始位置开始拷贝n个字节到目标dest所指的内存地址的起始位置中</p>
+</blockquote>
+<p>再来新的mysort函数：<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">void mysort(void* base, size_t num, size_t size, int(*comparator)(const void*, const void*)) &#123;</div><div class="line">	int i, j, key;</div><div class="line">	void* temp = malloc(size);</div><div class="line">	for (i = 0; i &lt; num; i++) &#123;</div><div class="line">		key = i;</div><div class="line">		for (j = i + 1; j &lt; num; j++) &#123;</div><div class="line">			if (comparator((char*)base + size * key, (char*)base + size * j) &gt; 0) &#123;</div><div class="line">				key = j;</div><div class="line">			&#125;</div><div class="line">			// 进行交换</div><div class="line">			if (key != i) &#123;</div><div class="line">				//exchangeVoid((char*)base + size * key, (char*)base + size * i, size);</div><div class="line">				memcpy(temp, (char*)base + size * key, size);</div><div class="line">				memcpy((char*)base + size * key, (char*)base + size * i, size);</div><div class="line">				memcpy((char*)base + size * i, temp, size);</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
+<p>我觉得已经不需要讲那么多啦，上面的能理解，这个soeasy。</p>
+<p>然后部长我去翻了一翻qsort() memset() memcpy()的源码，惊讶的发现原来也是用char*来操作的，，，</p>
+<p>不过这样写简洁一点嘛，而且库函数一定写的比自己好.jpg。</p>
+
+        </section>
+        <hr/>
+        <nav class="pagination" style="width:auto" role="pagination">
+            
+            <a style="cursor:default" class="newer-posts" href="#">This is the First Post</a>
+            
+            <a class="share-button" data-original-title title>Share this Post</a>
+            
+            <a data-pjax class="older-posts" href="/2017/07/24/第三期Task-LeetCode算法题/">Next Post →</a>
+            
+        </nav>
+        <br/>
+        <br/>
+        <section id="comment">
+            <div id="comment-box"></div>
+        </section>
+
+
+    </article>
+</main>
+
+
+  
+<footer class="site-footer">
+    
+    <div class="inner">
+        <section class="copyright"><a href="/"></a> &copy; xiaoyu 2014</section>
+        <section class="poweredby">Published with <a target="_blank" href="http://hexo.io/">Hexo   </a> and Theme by <a target="_blank" href="https://github.com/yuche/hexo-theme-kael">Kael</a></section>
+    </div>
+</footer>
+</div>
+</div><!-- /scroller -->
+
+</div><!-- /pusher -->
+</div><!-- /container -->
+</div>
+
+<!-- Easter eggs -->
+
+<div class="egg animated">
+    <a id="close-button" href="#">X</a>
+    <div class="block">
+        <div class="loading">
+            <span class="ball1"></span>
+            <span class="ball2"></span>
+        </div>
+    </div>
+</div>
+  
+<script src="//cdn.staticfile.org/jquery/1.11.0/jquery.min.js"></script>
+<script>
+    if (!window.jQuery) {
+        var script = document.createElement('script');
+        script.src = "/js/jquery.min.js";
+        document.body.appendChild(script);
+    }
+</script>
+<script type="text/javascript" src="/js/lib.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+
+
+
+
+</body>
+</html>
