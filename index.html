@@ -1,321 +1,1118 @@
 <!DOCTYPE html>
-<html>
 
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="">
 <head>
-  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-  <title>xiaoyu</title>
-  <meta name="description" content="" />
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="MobileOptimized" content="320" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" type="text/css" href="/css/component.css" />
-  <link rel="stylesheet" type="text/css" href="/css/screen.css" />
-  <meta name="generator" content="xiaoyu">
-  <script src="http://static.duoshuo.com/embed.js"></script>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
   
   
   
 
   
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="xiaoyu">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="xiaoyu">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="xiaoyu">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/"/>
+
+
+
+
+
+  <title>xiaoyu</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </head>
-<body>
-<div class="container">
-    <div class="mp-pusher" id="mp-pusher">
-        <i id="scroll-up" class="fa fa-angle-up"></i>
-        <nav id="mp-menu" class="mp-menu">
-            <div class="mp-level">
-                <a data-pjax class="back-home" style="font-size: 20px" href="/"><h2 ><i class="fa fa-home"></i>
-                        Home</h2></a>
-                <ul class="first-level">
-                    <li>
-                        <a class="fa fa-archive" href="#"><i class="fa fa-angle-left">
-                            </i>&nbsp;&nbsp;Archive</a>
-                        <div class="mp-level page-list">
-                            <h2 ><i class="fa fa-archive"></i>
-                                Archive</h2>
-                            <a class="mp-back" href="#">back</a>
-                            <form id="search-form" action="">
-                                <input type="text" class="search search-archive" placeholder="Search.."/>
-                            </form>
-                            <ul>
-                                <div class="mp-scroll">
-                                
-                                <li class="search-archive-li mp-pjax">
-                                    <a href="/2017/12/17/hexo-node-js-github的博客搭建教程/">hexo+node.js+github的博客搭建教程</a>
-                                </li>
-                                
-                                <li class="search-archive-li mp-pjax">
-                                    <a href="/2017/12/17/c语言-qsort-函数的一些理解/">c语言 qsort() 函数的一些理解</a>
-                                </li>
-                                
-                                <li class="search-archive-li mp-pjax">
-                                    <a href="/2017/07/24/第三期Task-LeetCode算法题/">第三期Task-LeetCode算法题</a>
-                                </li>
-                                
-                                <li class="search-archive-li mp-pjax">
-                                    <a href="/2017/06/28/hello-world/">Hello World</a>
-                                </li>
-                                
-                                </div>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="fa fa-copy" href="#"><i class="fa fa-angle-left">
-                            </i>&nbsp;&nbsp;Categories</a>
 
-                        <div class="mp-level page-list">
-                            <h2 ><i class="fa fa-copy"></i>
-                                Categories</h2>
-                            <a class="mp-back" href="#">back</a>
-                            <form id="search-form" action="">
-                                <input type="text" class="search search-category" placeholder="Search.."/>
-                            </form>
-                            <ul>
-                                <div class="mp-scroll">
-                                
-                                </div>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="fa fa-tags" href="#"><i class="fa fa-angle-left">
-                            </i>&nbsp;&nbsp;Tags</a>
-                        <div class="mp-level page-list">
-                            <h2 ><i class="fa fa-tags"></i>
-                                Tags</h2>
-                            <a class="mp-back" href="#">back</a>
-                            <form id="search-form" action="">
-                                <input type="text" class="search search-tag" placeholder="Search.."/>
-                            </form>
-                            <ul>
-                                <div class="mp-scroll">
-                                
-                                </div>
-                            </ul>
-                        </div>
-                    </li>
-                    
-                    <li class="mp-pjax"><a class="fa fa-user" href="/about">&nbsp;&nbsp;&nbsp;About me</a></li>
-                    <li><a class="fa fa-github" href="#">&nbsp;&nbsp;&nbsp;Github</a></li>
-
-                </ul>
-
-            </div>
-        </nav>
-        <div id="pjax">
-            <div class="pjax-hidden" style="display: none">
-                
-                    <a  data-pjax href="/2017/12/17/hexo-node-js-github的博客搭建教程/">hexo+node.js+github的博客搭建教程</a>
-                
-                    <a  data-pjax href="/2017/12/17/c语言-qsort-函数的一些理解/">c语言 qsort() 函数的一些理解</a>
-                
-                    <a  data-pjax href="/2017/07/24/第三期Task-LeetCode算法题/">第三期Task-LeetCode算法题</a>
-                
-                    <a  data-pjax href="/2017/06/28/hello-world/">Hello World</a>
-                
-                
-                
-                <a data-pjax class="fa fa-user" href="/about">&nbsp;&nbsp;&nbsp;About me</a>
-            </div>
-            <nav class="nexus">
-                <li  style="border-left: 1px solid #c6d0da;">
-                    <a id="trigger" href="#"><i class="fa fa-bars"></i></a>
-                </li>
-                <li ><a id="nexus-back" data-pjax href="/">xiaoyu</a></li>
-                
-                <div id="nav-container">
-                    <div class="post-navbar" style="line-height: 63px;display:none">
-                        <li id="navbar-title"><a href="#">undefined</a></li>
-                        <li id="navbar-toc" style="border-left: none">
-                            <a style="padding-right: 15px">
-                                <span id="toc-content" >Introduction</span><i class="fa fa-chevron-down" ></i>
-                            </a>
-                            <div class="hidden-box">
-                                <ul id="toc"></ul>
-                            </div>
-                        </li>
-                    </div>
-                </div>
-                
-            </nav>
-
-            <div class="scroller">
-            <div class="scroller-inner">
-
-
-<!-- -->
-<!--<body class="home-template">-->
-<!---->
-  
-<main class="content" role="main">
-
-    
-    <article class="post">
-
-        <header class="post-header">
-            <div class="tag-tile">
-                
-                <span class="fa fa-bookmark" style="float:right;color:#f39c12"></span>
-            </div>
-            <h1 class="post-title"><a data-pjax href="/2017/12/17/hexo-node-js-github的博客搭建教程/">hexo+node.js+github的博客搭建教程</a>
-            </h1>
-
-            <div class="post-meta">
-                Post on<span class="fa fa-clock-o"></span>
-                <time datetime="2017-12-17T09:51:18.000Z"
-                      itemprop="datePublished">2017-12-17</time>
-            </div>
-        </header>
-        <section class="post-excerpt">
-            <p>
-                
-                菜的一批的hexo+node.js+github搭建个人博客的教程
-hexo大概的原理hexo基于node.js框架，可以通过简单的命令生成一个静态的html页面12hexo generatehexo g
-以及通过读取配置文件中的信息一键化部署到github12hexo deployhexo d
-我们需要做的只有配置好hexo环境，然后使用命令来生成新文章12hexo new &quot;文章标题&quot;hexo n &quot;文
-                
-            </p>
-            
-        </section>
-    </article>
-    
-    <article class="post">
-
-        <header class="post-header">
-            <div class="tag-tile">
-                
-                <span class="fa fa-bookmark" style="float:right;color:#f39c12"></span>
-            </div>
-            <h1 class="post-title"><a data-pjax href="/2017/12/17/c语言-qsort-函数的一些理解/">c语言 qsort() 函数的一些理解</a>
-            </h1>
-
-            <div class="post-meta">
-                Post on<span class="fa fa-clock-o"></span>
-                <time datetime="2017-12-17T08:22:50.000Z"
-                      itemprop="datePublished">2017-12-17</time>
-            </div>
-        </header>
-        <section class="post-excerpt">
-            <p>
-                
-                qsort函数与mysort函数详解
-菜鸡的我来发教程啦。
-1.如何使用qsort1234567891011#include&lt;stdio.h&gt;#include&lt;stdlib.h&gt;int compare(const void* a, const void* b) &#123; return *(int*)a - *(int*)b; &#125;int main() &#123;	int nums1[] = &#12
-                
-            </p>
-            
-        </section>
-    </article>
-    
-    <article class="post">
-
-        <header class="post-header">
-            <div class="tag-tile">
-                
-                <span class="fa fa-bookmark" style="float:right;color:#f39c12"></span>
-            </div>
-            <h1 class="post-title"><a data-pjax href="/2017/07/24/第三期Task-LeetCode算法题/">第三期Task-LeetCode算法题</a>
-            </h1>
-
-            <div class="post-meta">
-                Post on<span class="fa fa-clock-o"></span>
-                <time datetime="2017-07-24T14:41:17.000Z"
-                      itemprop="datePublished">2017-07-24</time>
-            </div>
-        </header>
-        <section class="post-excerpt">
-            <p>
-                
-                第三期Task-LeetCode算法题
-3Sum先附上题目
-Given an array S of n integers, are there elements a, b, c in S such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.Note: The solution set must not con
-                
-            </p>
-            
-        </section>
-    </article>
-    
-    <article class="post">
-
-        <header class="post-header">
-            <div class="tag-tile">
-                
-                <span class="fa fa-bookmark" style="float:right;color:#f39c12"></span>
-            </div>
-            <h1 class="post-title"><a data-pjax href="/2017/06/28/hello-world/">Hello World</a>
-            </h1>
-
-            <div class="post-meta">
-                Post on<span class="fa fa-clock-o"></span>
-                <time datetime="2017-06-28T14:14:07.343Z"
-                      itemprop="datePublished">2017-06-28</time>
-            </div>
-        </header>
-        <section class="post-excerpt">
-            <p>
-                
-                Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new p
-                
-            </p>
-            
-        </section>
-    </article>
-    
-    <nav class="pagination" role="pagination">
-        
-        <span class="page-number">Page 1 of 1</span>
-        
-    </nav>
-</main>
-
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
 
   
-<footer class="site-footer">
+  
     
-    <div class="inner">
-        <section class="copyright"><a href="/"></a> &copy; xiaoyu 2014</section>
-        <section class="poweredby">Published with <a target="_blank" href="http://hexo.io/">Hexo   </a> and Theme by <a target="_blank" href="https://github.com/yuche/hexo-theme-kael">Kael</a></section>
+  
+
+  <div class="container sidebar-position-left 
+   page-home 
+ ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">xiaoyu</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
     </div>
-</footer>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
 </div>
-</div><!-- /scroller -->
 
-</div><!-- /pusher -->
-</div><!-- /container -->
-</div>
+<nav class="site-nav">
+  
 
-<!-- Easter eggs -->
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
 
-<div class="egg animated">
-    <a id="close-button" href="#">X</a>
-    <div class="block">
-        <div class="loading">
-            <span class="ball1"></span>
-            <span class="ball2"></span>
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/17/hexo-node-js-github的博客搭建教程/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xiaoyu Shu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xiaoyu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/12/17/hexo-node-js-github的博客搭建教程/" itemprop="url">hexo+node.js+github的博客搭建教程</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-17T17:51:18+08:00">
+                2017-12-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
         </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="菜的一批的hexo-node-js-github搭建个人博客的教程"><a href="#菜的一批的hexo-node-js-github搭建个人博客的教程" class="headerlink" title="菜的一批的hexo+node.js+github搭建个人博客的教程"></a>菜的一批的hexo+node.js+github搭建个人博客的教程</h1><hr>
+<h2 id="hexo大概的原理"><a href="#hexo大概的原理" class="headerlink" title="hexo大概的原理"></a><strong>hexo大概的原理</strong></h2><p>hexo基于node.js框架，可以通过简单的命令生成一个静态的html页面<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo generate</div><div class="line">hexo g</div></pre></td></tr></table></figure></p>
+<p>以及通过读取配置文件中的信息一键化部署到github<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo deploy</div><div class="line">hexo d</div></pre></td></tr></table></figure></p>
+<p>我们需要做的只有配置好hexo环境，然后使用命令来生成新文章<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo new &quot;文章标题&quot;</div><div class="line">hexo n &quot;文章标题&quot;</div></pre></td></tr></table></figure></p>
+<p>注意hexo生成的是静态页面，也就是说其实所有的网页生成在generate的时候就已经完成，每次对文章有改动，都必须重新generate，然后再部署到github，这个时候博客才会更新。</p>
+<h2 id="node-js环境"><a href="#node-js环境" class="headerlink" title="node.js环境"></a><strong>node.js环境</strong></h2><p><a href="https://nodejs.org/en/" target="_blank" rel="external">node.js官网</a><br><a href="http://nodejs.cn/" target="_blank" rel="external">node.js国内镜像（好像是阿里爸爸的）</a><br>推荐用阿里爸爸的，毕竟比较快。。</p>
+<h3 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h3><p>win就是懒人操作嘛，，下载–解压–安装–疯狂点next，连环境变量都帮你配好</p>
+<h3 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h3><p>我对linux不算是特别熟悉，命令可能有错，你们谨慎Ctrl c+v</p>
+<p>先下载<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget https://npm.taobao.org/mirrors/node/v8.9.0/node-v8.9.0-linux-x64.tar.xz</div></pre></td></tr></table></figure></p>
+<p>然后解压<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">tar xvf node-v8.9.0-linux-x64.tar.xz</div></pre></td></tr></table></figure></p>
+<p>然后就安装完成了，不过这个时候node命令的环境变量还没有配置，这个配置就自己百度/Google吧，方法有好多种</p>
+<h3 id="Mac"><a href="#Mac" class="headerlink" title="Mac"></a>Mac</h3><p>ummm个人猜测和Linux差不多</p>
+<h3 id="检查安装"><a href="#检查安装" class="headerlink" title="检查安装"></a>检查安装</h3><p>在命令行里面输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">node -v</div><div class="line">npm -v</div></pre></td></tr></table></figure></p>
+<p>如果查看到了版本号，那就说明安装+配置完毕了，可以开始使用hexo了。</p>
+<h2 id="hexo下载"><a href="#hexo下载" class="headerlink" title="hexo下载"></a><strong>hexo下载</strong></h2><p>首先，找一个看起来比较顺眼的文件夹，我们在这个文件夹里面放我们的hexo和blog</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">npm install hexo-cli -g</div><div class="line">npm install hexo --save</div><div class="line">hexo -v</div></pre></td></tr></table></figure>
+<p>依次键入以上命令后，可以看见hexo的一些版本信息</p>
+<p>接下来生成blog<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init blog</div></pre></td></tr></table></figure></p>
+<p>然后进入blog目录<br>继续输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install</div></pre></td></tr></table></figure></p>
+<p>npm install命令会根据json配置文件自动安装所需的库。</p>
+<p>这个时候就已经完成了，然后我们就可以生成blog页面<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo g</div><div class="line">hexo d</div><div class="line">hexo s</div></pre></td></tr></table></figure></p>
+<p><a href="https://xuanwo.org/2015/03/26/hexo-intor/" target="_blank" rel="external">https://xuanwo.org/2015/03/26/hexo-intor/</a><br><a href="https://linghucong.js.org/2016/04/15/2016-04-15-hexo-github-pages-blog/" target="_blank" rel="external">https://linghucong.js.org/2016/04/15/2016-04-15-hexo-github-pages-blog/</a><br>注意hexo s命令是在本地建立服务器，根据提示的网址进行访问，我们就可以看见这个网页了。（当然，hexo s命令被终止了我们就看不见了）</p>
+<p>一般来说，这个服务器监听的端口是4000，在浏览器中尝试访问一下这个端口</p>
+<p><a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a></p>
+<p>可以看见自己的博客了。</p>
+<h2 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a><strong>部署到github</strong></h2><p>其实也可以部署到其他地方，因为静态网页已经生成了，要做的只是让他可以被获取到。</p>
+<h3 id="配置github-pages"><a href="#配置github-pages" class="headerlink" title="配置github pages"></a>配置github pages</h3><p>首先需要一个存放hexo页面的仓库</p>
+<p>这里我们new一个，记住这个仓库的命名方式必须是  “用户名”+”.github.io”<br>（比如我的用户名是xiaoyuoshu，这里仓库名就应该是xiaoyuoshu.github.io）</p>
+<p>然后点击这个仓库的settings，在option菜单里下拉找到github pages，然后开启Automatic page generator。<br>这个时候访问<br><a href="https://xiaoyuoshu.github.io/" target="_blank" rel="external">https://xiaoyuoshu.github.io/</a><br>应该就可以访问成功。（请改成你自己的用户名，谢谢）</p>
+<h3 id="配置deploy-config"><a href="#配置deploy-config" class="headerlink" title="配置deploy config"></a>配置deploy config</h3><p>这个时候我们已经有了两个资源，1.我们本地的博客静态html。2.一个可以访问并获取到静态html的github仓库。<br>现在要做的就是把本地的上传到github上。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure></p>
+<p>先安装deploy到github上的node扩展。<br>在blog目录下打开_config.yml文件（yml里面不要随便打空格和回车和换行，格式要求极其严格。）然后下拉，找到最底下的deploy,按照如下格式修改他，还是记住把所有的我的用户名换成你的！！！<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: git@github.com:xiaoyuoshu/xiaoyuoshu.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
+<p>然后保存这个文件。<br>我们再使用<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d</div></pre></td></tr></table></figure></p>
+<p>就可以部署到github了，这个时候再打开博客的链接，就可以看见自己的博客了。</p>
+<h2 id="写文章"><a href="#写文章" class="headerlink" title="写文章"></a>写文章</h2><p>写文章使用的是markdown语法。<br>这里我们先在blog目录下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new &quot;文章标题&quot;</div></pre></td></tr></table></figure></p>
+<p>然后<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd source</div><div class="line">cd _posts</div></pre></td></tr></table></figure></p>
+<p>这个目录就是我们的文章目录了<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">dir</div></pre></td></tr></table></figure></p>
+<p>我们就可以看见我们的所有文章了，这个时候应该有一个helloworld.md和一个我们新建的文章标题.md</p>
+<p>使用文本编辑器打开这个新的文章标题.md文件，可以看到开头是一段配置，不用管。</p>
+<p>把写好的markdown文本复制到配置之后，保存</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo g</div><div class="line">hexo d</div></pre></td></tr></table></figure>
+<p>就可以看见我们的文章了。</p>
+<h2 id="gaoji配置"><a href="#gaoji配置" class="headerlink" title="gaoji配置"></a><strong>gaoji配置</strong></h2><h3 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h3><p>嫌博客页面太丑怎么办，，我们来换个主题吧。</p>
+<p>首先，默认的主题都是存在themes目录下的，有几个主题就有几个文件夹。<br>这个主题就自己去网上找吧，蛮多的，甚至还有二刺猿主题？？？</p>
+<p>下载好之后，还是进入_config.yml文件<br>找到这一段<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"># Extensions</div><div class="line">## Plugins: https://hexo.io/plugins/</div><div class="line">## Themes: https://hexo.io/themes/</div><div class="line">theme: kael</div></pre></td></tr></table></figure></p>
+<p>这里我的主题是kael，假设要换成landscape，就把kael替换掉就可以了。注意冒号和主题名之间有一个空格，这个空格别删掉了。</p>
+<p>然后<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean</div><div class="line">hexo d</div><div class="line">hexo s</div></pre></td></tr></table></figure></p>
+<p>就可以看见更换后的主题啦。</p>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>其他的功能我也没怎么多用，不敢细讲，不过谷歌和百度上超多教程。我就列举一下吧。</p>
+<ol>
+<li>配置域名，如果嫌带github.io的域名太low，可以自己去买一个域名，然后解析到github给你分配的ip</li>
+<li>配置文章标签</li>
+<li>配置文章目录</li>
+<li>配置页面中的一些链接</li>
+<li>等等</li>
+</ol>
+<h2 id="其他-1"><a href="#其他-1" class="headerlink" title="其他"></a><strong>其他</strong></h2><p>hexo已经是给小白搭建博客的福音了，希望各位常写博客，不要跟我一样当鸽子。</p>
+<p>在以后能力强大了之后，我们可以自己购买服务器，并使用一些比较火的框架（如worldpress）搭建自己的博客，并实现更多的功能。</p>
+<p>互勉</p>
+
+          
+        
+      
     </div>
-</div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
   
-<script src="//cdn.staticfile.org/jquery/1.11.0/jquery.min.js"></script>
-<script>
-    if (!window.jQuery) {
-        var script = document.createElement('script');
-        script.src = "/js/jquery.min.js";
-        document.body.appendChild(script);
-    }
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/17/c语言-qsort-函数的一些理解/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xiaoyu Shu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xiaoyu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/12/17/c语言-qsort-函数的一些理解/" itemprop="url">c语言 qsort() 函数的一些理解</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-17T16:22:50+08:00">
+                2017-12-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="qsort函数与mysort函数详解"><a href="#qsort函数与mysort函数详解" class="headerlink" title="qsort函数与mysort函数详解"></a>qsort函数与mysort函数详解</h1><hr>
+<p>菜鸡的我来发教程啦。</p>
+<h2 id="1-如何使用qsort"><a href="#1-如何使用qsort" class="headerlink" title="1.如何使用qsort"></a><strong>1.如何使用qsort</strong></h2><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">compare</span><span class="params">(<span class="keyword">const</span> <span class="keyword">void</span>* a, <span class="keyword">const</span> <span class="keyword">void</span>* b)</span> </span>&#123; <span class="keyword">return</span> *(<span class="keyword">int</span>*)a - *(<span class="keyword">int</span>*)b; &#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">	<span class="keyword">int</span> nums1[] = &#123;<span class="number">1</span>, <span class="number">489</span>, <span class="number">4591</span>, <span class="number">189</span>, <span class="number">123</span>, <span class="number">189</span>, <span class="number">56</span>, <span class="number">6</span>&#125;;</div><div class="line">	qsort(nums1, <span class="keyword">sizeof</span>(nums1) / <span class="keyword">sizeof</span>(<span class="keyword">int</span>), <span class="keyword">sizeof</span>(<span class="keyword">int</span>), compare);</div><div class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="keyword">sizeof</span>(nums1) / <span class="keyword">sizeof</span>(<span class="keyword">int</span>); i++)</div><div class="line">	&#123;</div><div class="line">		<span class="built_in">printf</span>(<span class="string">"%d "</span>, nums1[i]);</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>先看compare函数，传入了两个void<em>指针，但是交换的时候使用了(int </em>)a的强制类型转换。至于为什么，先放一放。</p>
+<p>然后是qsort使用，这个上次的邮件里已经写了，我就不赘述了。</p>
+<p>注意sizeof(nums1) / sizeof(int)可以获取所需的数组的长度。</p>
+<h2 id="2-关于void-指针"><a href="#2-关于void-指针" class="headerlink" title="2.关于void*指针"></a><strong>2.关于void*指针</strong></h2><p>先看一下基本的内容，可能有错，但是对理解没什么影响。</p>
+<blockquote>
+<p>1.指针有四个相关的参数：a.自己的名字。b.自己本身的地址。c.储存的、也就是指向的地址。d.指向的变量的类型。</p>
+<p>2.现在如果int a有4个字节，也就是32位，那么int<em> p = &amp;a，那么首先p指向的地址是a的<em>*第一个字节的地址</em></em>。</p>
+<p>3.继续，当p++时，p会跳过几个字节呢？答案是<strong>四个</strong>，也就是说现在p指向a的最后一个字节的后一个字节。</p>
+</blockquote>
+<p>也就是说，指针需要知道自己指向的变量的地址，还要知道<strong>指向的变量的长度</strong>，这个长度一方面是为了做<strong>++</strong>的操作，另一方面是为了<strong>解引用</strong>（如*p=1）时，能够获取到完整的变量。</p>
+<p>好了，现在回到void<em>，先明确一点：void</em>指针是没有“指向变量的类型”这个参数的。</p>
+<p>所以：<strong>1.void<em>不允许自增，2.void</em>不允许解引用</strong></p>
+<h2 id="3-回到compare函数"><a href="#3-回到compare函数" class="headerlink" title="3.回到compare函数"></a><strong>3.回到compare函数</strong></h2><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">compare</span><span class="params">(<span class="keyword">const</span> <span class="keyword">void</span>* a, <span class="keyword">const</span> <span class="keyword">void</span>* b)</span> </span>&#123; </div><div class="line">    <span class="keyword">return</span> *(<span class="keyword">int</span>*)a - *(<span class="keyword">int</span>*)b; </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>传入了两个常量void<em>指针a，b，这个函数要做的就是比较待排序元素。<br>因为这里我要排序的是int数组，所以使用(int</em>)a，把a变成一个int<em>类型的指针，这样子a就拥有了指向的变量的长度这个参数，然后</em>(int<em>)a，对(int</em>)a解引用，获取那个int类型的值。b同理。然后比较a和b的大小。注意，在compare函数中，要求compare返回的值的格式为：a要排在b后面，则a&gt;b时返回正值，反之同理。</p>
+<h2 id="4-如何实现自己的mysort函数"><a href="#4-如何实现自己的mysort函数" class="headerlink" title="4.如何实现自己的mysort函数"></a><strong>4.如何实现自己的mysort函数</strong></h2><p>先看mysort函数原型<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">void mysort(void* base, size_t num, size_t size, int(*comparator)(const void*, const void*)) ;</div></pre></td></tr></table></figure></p>
+<p>可以发现，为了让mysort函数可以排序任意的类型的数组，就必须让base这个参数为void<em>，因为任意的指针都可以赋值给void</em>指针。</p>
+<p>但是现在问题来了，我们手里只有三个值，没有<strong>保存变量类型的基地址base</strong>，<strong>待排序的元素数量num</strong>，<strong>待排序的元素的类型所占的字节大小size</strong>。</p>
+<p>主要要实现以下三点：1.把每个待排序的元素区分开来。2.实现待排序元素之间的交换。3.实现待排序元素之间的比较。</p>
+<p>这三点按理来说都是需要知道待排序元素的类型的，但是mysort是获取不到的。（其中第三点因为比较是使用compare函数实现的，而用户自定义的compare函数，用户肯定是知道元素类型的，这个可以不用烧脑了）</p>
+<p>先看一段普通的带参选择排序<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; num; i++) &#123;</div><div class="line">		key = i;</div><div class="line">		<span class="keyword">for</span> (j = i + <span class="number">1</span>; j &lt; num; j++) &#123;</div><div class="line">			<span class="keyword">if</span> (nums[key]&gt;nums[j]) &#123;</div><div class="line">				key = j;</div><div class="line">			&#125;</div><div class="line">			<span class="keyword">if</span> (key != i) &#123;</div><div class="line">                <span class="keyword">int</span> temp = nums[key];</div><div class="line">                nums[key] = nums[i];</div><div class="line">                nums[i] = temp; </div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">	&#125;</div></pre></td></tr></table></figure></p>
+<p>对比刚才要实现的三点，我们可以发现重点在第4行和第8-10行。</p>
+<p>先上一段代码<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; num; i++) &#123;</div><div class="line">		key = i;</div><div class="line">		<span class="keyword">for</span> (j = i + <span class="number">1</span>; j &lt; num; j++) &#123;</div><div class="line">			<span class="keyword">if</span> (comparator((<span class="keyword">char</span>*)base + size * key, (<span class="keyword">char</span>*)base + size * j) &gt; <span class="number">0</span>) &#123;</div><div class="line">				key = j;</div><div class="line">			&#125;</div><div class="line">			<span class="comment">// 进行交换</span></div><div class="line">			<span class="keyword">if</span> (key != i) &#123;</div><div class="line">				exchangeVoid((<span class="keyword">char</span>*)base + size * key, (<span class="keyword">char</span>*)base + size * i, size);</div><div class="line"></div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">	&#125;</div></pre></td></tr></table></figure></p>
+<p>其中exchangeVoid()函数定义如下。（此处征得sya同学的同意，偷懒的我直接用他写好的代码了）<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">exchangeVoid</span><span class="params">(<span class="keyword">void</span> * from, <span class="keyword">void</span> *  to, <span class="keyword">size_t</span> size)</span> </span>&#123;</div><div class="line">	<span class="keyword">char</span> * fromPtr = (<span class="keyword">char</span> *)from;</div><div class="line">	<span class="keyword">char</span> * toPtr = (<span class="keyword">char</span> *)to;</div><div class="line">	<span class="keyword">char</span> temp;</div><div class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; (<span class="keyword">int</span>)size; i++) &#123;</div><div class="line">		temp = *(fromPtr + i);</div><div class="line">		*(fromPtr + i) = *(toPtr + i);</div><div class="line">		*(toPtr + i) = temp;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>先来解决第四行的问题，也就是使用comparator()来比较。</p>
+<p>comparator()函数需要拿到已经分开的两个待排序的元素（这里只用把待排序的元素的void*地址传过去即可，因为在comparator()函数里已经实现了强制类型转换）</p>
+<p>这一步呢，应该是比较nums[key]和nums[j]的大小，所以使用了<strong>(char<em>)base + size </em> key</strong>来拿到nums[key]，nums[j]同理。</p>
+<p>现在先暂停一下，看看为什么要突然使用一个char*。</p>
+<p>回忆一下char的大小，是一个字节，而c语言中没有半个字节的变量，所以可以把char的大小当成单位长度。</p>
+<p>所以我们先把base指针变成单位长度的指针，然后加上size*key，跳过key个size，拿到nums[key]。（推荐在草稿纸上画一个图来理解）。这里假如待排序的是整数，那么size就是4个单位长度。</p>
+<p>实际上如果编译器6一点，可以直接这样写：<strong>base + size * key</strong>，但是推荐还是加上char*强制类型转换，比较稳妥。</p>
+<p>好了第一个问题解决了，我们继续解决下一个问题：交换。</p>
+<p>我们还是使用char*这个骚操作来完成。</p>
+<p>现在先好好读一下sya大佬的exchangeVoid()函数，同样使用了类似上一步的方法，拿到了nums[key]和nums[i]。</p>
+<p>但是这个函数与comparator()函数不同的是，这个函数不是由用户自定义的，也就是说需要适应所有的可能的数据类型，并对他们交换。</p>
+<p>怎么做呢？其实第一部里面的(char *)理解了，这一步也就显而易见了。</p>
+<p>假设现在有待排序元素是有46个字节大小（这个字节大小通过size参数获得）的结构体。同样，把这个结构体拆分成46个单位长度（也就是46个char）。</p>
+<p>然后我们就有了第一组拆分成46个char的结构体，和第二组46个char的结构体，然后要实现他们的交换。显而易见，一次把第一个char和第一个char交换、把第二个char和第二个char交换······</p>
+<p>这样我们就实现了比较和交换，就可以用来排序啦！</p>
+<h2 id="5-memcpy函数"><a href="#5-memcpy函数" class="headerlink" title="5.memcpy函数"></a><strong>5.memcpy函数</strong></h2><p>先看百度百科：</p>
+<blockquote>
+<p>void <em>memcpy(void </em>dest, const void *src, size_t n);<br>从源src所指的内存地址的起始位置开始拷贝n个字节到目标dest所指的内存地址的起始位置中</p>
+</blockquote>
+<p>再来新的mysort函数：<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">void mysort(void* base, size_t num, size_t size, int(*comparator)(const void*, const void*)) &#123;</div><div class="line">	int i, j, key;</div><div class="line">	void* temp = malloc(size);</div><div class="line">	for (i = 0; i &lt; num; i++) &#123;</div><div class="line">		key = i;</div><div class="line">		for (j = i + 1; j &lt; num; j++) &#123;</div><div class="line">			if (comparator((char*)base + size * key, (char*)base + size * j) &gt; 0) &#123;</div><div class="line">				key = j;</div><div class="line">			&#125;</div><div class="line">			// 进行交换</div><div class="line">			if (key != i) &#123;</div><div class="line">				//exchangeVoid((char*)base + size * key, (char*)base + size * i, size);</div><div class="line">				memcpy(temp, (char*)base + size * key, size);</div><div class="line">				memcpy((char*)base + size * key, (char*)base + size * i, size);</div><div class="line">				memcpy((char*)base + size * i, temp, size);</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
+<p>我觉得已经不需要讲那么多啦，上面的能理解，这个soeasy。</p>
+<p>然后部长我去翻了一翻qsort() memset() memcpy()的源码，惊讶的发现原来也是用char*来操作的，，，</p>
+<p>不过这样写简洁一点嘛，而且库函数一定写的比自己好.jpg。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/24/第三期Task-LeetCode算法题/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xiaoyu Shu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xiaoyu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/07/24/第三期Task-LeetCode算法题/" itemprop="url">第三期Task-LeetCode算法题</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-24T22:41:17+08:00">
+                2017-07-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="第三期Task-LeetCode算法题"><a href="#第三期Task-LeetCode算法题" class="headerlink" title="第三期Task-LeetCode算法题"></a>第三期Task-LeetCode算法题</h1><hr>
+<h2 id="3Sum"><a href="#3Sum" class="headerlink" title="3Sum"></a><strong>3Sum</strong></h2><p>先附上题目</p>
+<p>Given an array S of n integers, are there elements a, b, c in S such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.<br>Note: The solution set must not contain duplicate triplets.<br>For example, given array S = [-1, 0, 1, 2, -1, -4],<br>A solution set is:<br>[<br>  [-1, 0, 1],<br>  [-1, -1, 2]<br>]</p>
+<p>看到这道题我的第一想法就是用调用2Sum函数来写，但是发现2Sum返回的是索引，而这题需要的是数值。想通这点之后就意识到了重复查找的问题。</p>
+<p>因为2Sum是用的hash表做的，速度还不错，因此最开始我的想法也还是用hash来写。然后有了如下的solution1。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> List&lt;List&lt;Integer&gt;&gt; threeSum1(<span class="keyword">int</span>[] nums) &#123;</div><div class="line">        List&lt;List&lt;Integer&gt;&gt; for_return = <span class="keyword">new</span> LinkedList&lt;&gt;();</div><div class="line">        Arrays.sort(nums);</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length - <span class="number">2</span>; i++)&#123;</div><div class="line">            <span class="keyword">if</span>(nums[i] &gt; <span class="number">0</span>) <span class="keyword">break</span>;</div><div class="line">            <span class="keyword">if</span>(i != <span class="number">0</span> &amp;&amp; nums[i] == nums[i-<span class="number">1</span>]) <span class="keyword">continue</span>;</div><div class="line">            Hashtable hashtable = <span class="keyword">new</span> Hashtable();</div><div class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j = i + <span class="number">1</span>; j &lt; nums.length; j++)&#123;</div><div class="line">                <span class="keyword">int</span> tag = <span class="number">0</span> - nums[i] - nums[j];</div><div class="line">                <span class="keyword">if</span>(hashtable.containsKey(tag))&#123;</div><div class="line">                    <span class="keyword">if</span>((<span class="keyword">int</span>)hashtable.get(tag) == <span class="number">0</span>)&#123;</div><div class="line">                        for_return.add(Arrays.asList(nums[i],tag,nums[j]));</div><div class="line">                        hashtable.replace(tag, <span class="number">0</span>, <span class="number">1</span>);</div><div class="line">                    &#125;</div><div class="line">                &#125;</div><div class="line">                <span class="keyword">else</span> hashtable.put(nums[j] , <span class="number">0</span>);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> for_return;</div><div class="line">    &#125;</div></pre></td></tr></table></figure></p>
+<p>首先，调用了Arrays类的方法sort对nums数组进行排序。然后进入外部循环，循环体内的第一句是后续优化时加上的，因为排序之后，当最小的数都大于0，结果一定大于0，所以也就不需要继续判断了（加上这句才AC的）。第二句是防止重复（因为已经排序好了，相同的数已经放在了一起，所以很容易跳过不需要判断的重复数）。在内部循环中，从索引i+1开始，使用类似2Sum的hash解法的方法判断结果。为了避免重复，在每个数第一次进入hash表时，给的值是0，然后在这个数被使用之后，调用replace方法，把值修改为1，下次不再使用这组数。</p>
+<p>这里贴上2Sum的hash解法 。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="keyword">int</span>[] twoSum(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> target) &#123;</div><div class="line">        Hashtable hashtable = <span class="keyword">new</span> Hashtable();</div><div class="line">        <span class="keyword">int</span> for_return[] = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">2</span>];</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; nums.length;i++)&#123;</div><div class="line">            <span class="keyword">int</span> tag = target - nums[i];</div><div class="line">            <span class="keyword">if</span>(hashtable.containsKey(tag))&#123;</div><div class="line">                for_return[<span class="number">0</span>] = (<span class="keyword">int</span>)hashtable.get(tag);</div><div class="line">                for_return[<span class="number">1</span>] = i;</div><div class="line">                <span class="keyword">break</span>;</div><div class="line">            &#125;</div><div class="line">            hashtable.put(nums[i],i);</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> for_return;</div><div class="line">    &#125;</div></pre></td></tr></table></figure></p>
+<p>这个解法跑完之后险险AC（多次优化后421ms），但是只beat了2.31%。然后我就去看了看这题的标签，2333竟然在Two Pointer里面。然后才有了solution2。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> List&lt;List&lt;Integer&gt;&gt; threeSum1(<span class="keyword">int</span>[] nums) &#123;</div><div class="line">        List&lt;List&lt;Integer&gt;&gt; for_return = <span class="keyword">new</span> LinkedList&lt;&gt;();</div><div class="line">        Arrays.sort(nums);</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length - <span class="number">2</span>; i++)&#123;</div><div class="line">            <span class="keyword">if</span>(nums[i] &gt; <span class="number">0</span>) <span class="keyword">break</span>;</div><div class="line">            <span class="keyword">if</span>(i != <span class="number">0</span> &amp;&amp; nums[i] == nums[i-<span class="number">1</span>]) <span class="keyword">continue</span>;</div><div class="line">            <span class="keyword">int</span> low = i + <span class="number">1</span>, high = nums.length -<span class="number">1</span>;</div><div class="line">            <span class="keyword">while</span>(low &lt; high)&#123;</div><div class="line">                <span class="keyword">if</span>(nums[i] + nums[low] + nums[high] &gt;<span class="number">0</span>)&#123;</div><div class="line">                    high--;</div><div class="line">                &#125;</div><div class="line">                <span class="keyword">else</span> <span class="keyword">if</span>(nums[i] + nums[low] + nums[high] &lt; <span class="number">0</span>)&#123;</div><div class="line">                    low++;</div><div class="line">                &#125;</div><div class="line">                <span class="keyword">else</span>&#123;</div><div class="line">                    for_return.add(Arrays.asList(nums[i],nums[low],nums[high]));</div><div class="line">                    <span class="keyword">while</span>(low &lt; high &amp;&amp; nums[low] == nums[low + <span class="number">1</span>]) low++;</div><div class="line">                    <span class="keyword">while</span>(low &lt; high &amp;&amp; nums[high] == nums[high - <span class="number">1</span>]) high--;</div><div class="line">                    low++;</div><div class="line">                    high--;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> for_return;</div><div class="line">    &#125;</div></pre></td></tr></table></figure></p>
+<p>这个思考的时间比hash长。但是感觉这个代码比hash要优雅。最主要的是时间短…一下子就77ms。</p>
+<ul>
+<li>[x] 一味的使用hash表也不一定好，能不查找就不查找。</li>
+</ul>
+<hr>
+<h2 id="Climbing-Stairs"><a href="#Climbing-Stairs" class="headerlink" title="Climbing Stairs"></a><strong>Climbing Stairs</strong></h2><p>emmm去年c语言大赛做过这道题，从后往前分析一下就是简单的斐波那契数列。附上代码走人。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">climbStairs</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</div><div class="line">        <span class="keyword">if</span>(n &lt;= <span class="number">2</span>)&#123;</div><div class="line">            <span class="keyword">return</span> n;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">int</span> first = <span class="number">1</span>;</div><div class="line">        <span class="keyword">int</span> second = <span class="number">1</span>;</div><div class="line">        <span class="keyword">int</span> temp;</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; n; i++)&#123;</div><div class="line">            temp = second;</div><div class="line">            second += first;</div><div class="line">            first = temp;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> second;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<hr>
+<h2 id="Course-Schedule"><a href="#Course-Schedule" class="headerlink" title="Course Schedule"></a><strong>Course Schedule</strong></h2><p>先上题目</p>
+<p>There are a total of n courses you have to take, labeled from 0 to n - 1.<br>Some courses may have prerequisites, for example to take course 0 you have to first take course 1, which is expressed as a pair: [0,1]<br>Given the total number of courses and a list of prerequisite pairs, is it possible for you to finish all courses?<br>For example:<br>2, [[1,0]]<br>There are a total of 2 courses to take. To take course 1 you should have finished course 0. So it is possible.<br>2, [[1,0],[0,1]]<br>There are a total of 2 courses to take. To take course 1 you should have finished course 0, and to take course 0 you should also have finished course 1. So it is impossible.<br>Note:<br>The input prerequisites is a graph represented by a list of edges, not adjacency matrices. Read more about how a graph is represented.<br>You may assume that there are no duplicate edges in the input prerequisites.</p>
+<p>拓扑排序：</p>
+<ol>
+<li>在有向图中选择一个没有前驱的节点进行操作。</li>
+<li>从有向图中删除该顶点和所有以它为尾的弧。</li>
+<li>重复1&amp;2</li>
+<li>之后两种情况，a.所有节点均被操作过–&gt;没有环（也就是可以修完所有科目），b.存在没有被操作过的节点–&gt;有环（准备收到一个环的你能做的岂止于此）。</li>
+</ol>
+<p>那么思路其实就是判断第四步进入a还是b了。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">canFinish</span><span class="params">(<span class="keyword">int</span> numCourses, <span class="keyword">int</span>[][] prerequisites)</span> </span>&#123;</div><div class="line">       List&lt;List&lt;Integer&gt;&gt; edges = <span class="keyword">new</span> LinkedList&lt;&gt;();</div><div class="line">        <span class="keyword">int</span>[] in = <span class="keyword">new</span> <span class="keyword">int</span>[numCourses];</div><div class="line">        List&lt;Integer&gt; temp;</div><div class="line">        Queue&lt;Integer&gt; queueForFS = <span class="keyword">new</span> LinkedList&lt;&gt;();</div><div class="line">        <span class="keyword">int</span> FScounter = <span class="number">0</span>;</div><div class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; numCourses; i++) &#123;</div><div class="line">			temp = <span class="keyword">new</span> LinkedList&lt;&gt;();</div><div class="line">			edges.add(temp);	</div><div class="line">		&#125;</div><div class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; prerequisites.length; i++)&#123;</div><div class="line">			edges.get(prerequisites[i][<span class="number">1</span>]).add(prerequisites[i][<span class="number">0</span>]);</div><div class="line">		&#125;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; prerequisites.length; i++) &#123;</div><div class="line">			in[prerequisites[i][<span class="number">0</span>]]++;</div><div class="line">		&#125;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; numCourses; i++) &#123;</div><div class="line">			<span class="keyword">if</span>(in[i] == <span class="number">0</span>)&#123;</div><div class="line">				queueForFS.offer(i);</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">        <span class="keyword">while</span>(!queueForFS.isEmpty())&#123;</div><div class="line">        	FScounter++;</div><div class="line">        	<span class="keyword">for</span> (<span class="keyword">int</span> i : edges.get(queueForFS.poll())) &#123;</div><div class="line">				in[i]--;</div><div class="line">				<span class="keyword">if</span>(in[i] == <span class="number">0</span>)&#123;</div><div class="line">					queueForFS.offer(i);</div><div class="line">				&#125;</div><div class="line">			&#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> FScounter == numCourses;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<p>第一个循环初始化List<list<integer>&gt;。第二个循环建立表。第三个循环统计入度。第四个循环将所有没有前驱的节点入队。准备工作完成之后，就可以进行环的判断。这里使用了一个FScounter来统计遍历过的节点数量。（至今没搞清楚foreach循环和for循环哪个快…）</list<integer></p>
+<hr>
+<h2 id="MinStack"><a href="#MinStack" class="headerlink" title="MinStack"></a><strong>MinStack</strong></h2><p>开始觉得不优雅，不想用第二个List来实现。然后就…各种尴尬，最后还是妥协了。另外真的觉得java的栈和队列是过度包装了。。。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MinStack</span> </span>&#123;</div><div class="line">    <span class="keyword">private</span> List&lt;Integer&gt; head;</div><div class="line">    <span class="keyword">private</span> List&lt;Integer&gt; mIntegers;</div><div class="line"></div><div class="line">    <span class="comment">/** initialize your data structure here. */</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">MinStack</span><span class="params">()</span> </span>&#123;</div><div class="line">        head = <span class="keyword">new</span> LinkedList&lt;&gt;();</div><div class="line">        mIntegers = <span class="keyword">new</span> LinkedList&lt;&gt;();</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">push</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;</div><div class="line">        head.add(<span class="number">0</span>,x);</div><div class="line">        <span class="keyword">if</span>(mIntegers.isEmpty() || x &lt;= getMin())&#123;</div><div class="line">        	mIntegers.add(<span class="number">0</span>,x);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">pop</span><span class="params">()</span> </span>&#123;</div><div class="line">    	<span class="keyword">if</span>(!head.isEmpty())&#123;</div><div class="line">    		<span class="keyword">if</span>(head.get(<span class="number">0</span>) == getMin())</div><div class="line">    			mIntegers.remove(<span class="number">0</span>);</div><div class="line">    		head.remove(<span class="number">0</span>);</div><div class="line">    	&#125;</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">top</span><span class="params">()</span> </span>&#123;</div><div class="line">        <span class="keyword">return</span> head.get(<span class="number">0</span>);</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getMin</span><span class="params">()</span> </span>&#123;</div><div class="line">        <span class="keyword">return</span> mIntegers.get(<span class="number">0</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/28/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xiaoyu Shu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xiaoyu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/06/28/hello-world/" itemprop="url">Hello World</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-28T22:14:07+08:00">
+                2017-06-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Xiaoyu Shu" />
+          <p class="site-author-name" itemprop="name">Xiaoyu Shu</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">posts</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Xiaoyu Shu</span>
+</div>
+
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
 </script>
-<script type="text/javascript" src="/js/lib.js"></script>
-<script type="text/javascript" src="/js/main.js"></script>
 
 
 
 
 
 
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+  
+    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
 </body>
 </html>
