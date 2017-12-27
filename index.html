@@ -330,8 +330,7 @@
       
         
           
-            <h1 id="C语言指针的个人见解（一）"><a href="#C语言指针的个人见解（一）" class="headerlink" title="C语言指针的个人见解（一）"></a>C语言指针的个人见解（一）</h1><p>标签（空格分隔）： C语言 指针 笔记</p>
-<hr>
+            <h1 id="C语言指针的个人见解（一）"><a href="#C语言指针的个人见解（一）" class="headerlink" title="C语言指针的个人见解（一）"></a>C语言指针的个人见解（一）</h1><hr>
 <h2 id="关于内存"><a href="#关于内存" class="headerlink" title="关于内存"></a><strong>关于内存</strong></h2><h3 id="内存基础"><a href="#内存基础" class="headerlink" title="内存基础"></a><strong>内存基础</strong></h3><p>1位 = 1bit = (0, 1)<br>1字节 = 8位（一般情况下）<br>一般来讲，可以把一个字节当成<strong>最小寻址单位</strong>，也就是最小的可以区分的、可以定位的一个内存。<br>8位，也就是2<sup>8</sup>种数据，也就是256种，如果是无符号整形数据的话就是0~255。</p>
 <h3 id="C语言变量的内存与变量地址"><a href="#C语言变量的内存与变量地址" class="headerlink" title="C语言变量的内存与变量地址"></a><strong>C语言变量的内存与变量地址</strong></h3><p>而在C语言中，假如有一个int类型的值（int_32），那么int应当是有<strong>四个字节</strong>的存储空间。<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> a = <span class="number">2</span>;</div></pre></td></tr></table></figure></p>
 <p>声明并初始化一个名为a的变量，那么a就被分配了<strong>4个字节</strong>的存储空间，并让a的值为2。</p>
