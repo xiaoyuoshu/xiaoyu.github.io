@@ -259,6 +259,161 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/30/C语言指针的个人见解（二）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xiaoyuoshu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xiaoyuoshu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/12/30/C语言指针的个人见解（二）/" itemprop="url">C语言指针的个人见解（二）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-30T20:53:14+08:00">
+                2017-12-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="C语言指针的个人见解（二）"><a href="#C语言指针的个人见解（二）" class="headerlink" title="C语言指针的个人见解（二）"></a>C语言指针的个人见解（二）</h1><hr>
+<h2 id="1-关于数组"><a href="#1-关于数组" class="headerlink" title="1.关于数组"></a><strong>1.关于数组</strong></h2><h3 id="1-1什么是数组"><a href="#1-1什么是数组" class="headerlink" title="1.1什么是数组"></a>1.1什么是数组</h3><p>在C语言中，数组指的是一系列相同数据组成的集合<br>数组有以下性质</p>
+<ol>
+<li>除去变长数组之外，声明数组的时候数组的大小必须由常量提供</li>
+<li>数组的大小在声明之后不可更改</li>
+<li>C语言不对越界做处理，需要coder自己注意</li>
+<li>数组名在使用上可以当做是指向数组第一个元素的该类型的指针</li>
+</ol>
+<p>数组的元素有如下性质</p>
+<ol>
+<li>每个元素的类型都相同</li>
+<li>元素名被隐藏，通过首地址+索引来找到元素</li>
+<li>因为类型相同，可知元素储存时所需的内存、字节数也相同</li>
+<li>在C语言中，数组的元素在内存中的排列是紧挨着的，并且地址依次递增</li>
+</ol>
+<h3 id="1-2数组举例"><a href="#1-2数组举例" class="headerlink" title="1.2数组举例"></a>1.2数组举例</h3><p>假设有int a[3]={0,1,2}<br>a[3]中的三个元素的地址和如下举例有相同性质</p>
+<blockquote>
+<p>a[0]：007FFE20 007FFE21 007FFE22 007FFE23<br>a[1]：007FFE24 007FFE25 007FFE26 007FFE27<br>a[2]：007FFE28 007FFE29 007FFE30 007FFE31</p>
+</blockquote>
+<p>可以看见最后两位是依次++的</p>
+<h3 id="1-3指针与数组名"><a href="#1-3指针与数组名" class="headerlink" title="1.3指针与数组名"></a>1.3指针与数组名</h3><p>还是使用上面的例子<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> a[<span class="number">3</span>] = &#123;<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>&#125;;</div><div class="line"><span class="keyword">int</span>* int_pa = a;</div></pre></td></tr></table></figure></p>
+<p>在这个前提下，会发现几个基本等价的语句<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">a[i];</div><div class="line">int_pa[i];</div><div class="line">*(int_pa+i)</div></pre></td></tr></table></figure></p>
+<p>在<a href="https://xiaoyuoshu.github.io/2017/12/27/C/" target="_blank" rel="external">C语言指针的个人见解（一）</a>中，已经讲过指针自增的效果<br>当int_pa指向a[0]时，int_pa的值就是007FFE20<br>所以(int_pa+1)的值就是007FFE24，也就是a[1]的地址，这个时候使用*解引用，自然就拿到了a[1]</p>
+<p>再复杂一点，下面几个也是等价的<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">*(*(*(*(X+i)+j)+k)+t);</div><div class="line">*(*(*(X[i]+j)+k)+t);</div><div class="line">*(*(X[i][j]+k)+t);</div><div class="line">*(X[i][j][k]+t);</div><div class="line">X[i][j][k][t];</div></pre></td></tr></table></figure></p>
+<h3 id="1-4指针数组与数组指针"><a href="#1-4指针数组与数组指针" class="headerlink" title="1.4指针数组与数组指针"></a>1.4指针数组与数组指针</h3><p>众所周知，读书要从右到左（滑稽）<br>所以指针数组就是指针组成的数组，是个数组<br>所以数组指针就是指向数组的指针，是个指针</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> *pa[<span class="number">3</span>];<span class="comment">//指针数组</span></div><div class="line"><span class="comment">//这样用</span></div><div class="line"><span class="keyword">int</span> a[<span class="number">3</span>] = &#123;<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>&#125;</div><div class="line">pa[<span class="number">0</span>] = a + <span class="number">0</span>;</div><div class="line">pa[<span class="number">1</span>] = a + <span class="number">1</span>;</div><div class="line">pa[<span class="number">2</span>] = a + <span class="number">2</span>;</div><div class="line"><span class="comment">//之后就有以下几组等价的语句</span></div><div class="line">*pa[<span class="number">0</span>]和a[<span class="number">0</span>]</div><div class="line">**(pa+<span class="number">1</span>)和a[<span class="number">1</span>]</div></pre></td></tr></table></figure>
+<p>可以画个图理解一下</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> (*pa)[<span class="number">3</span>];<span class="comment">//数组指针</span></div><div class="line"><span class="comment">//这样用</span></div><div class="line"><span class="keyword">int</span> a[<span class="number">3</span>][<span class="number">3</span>];</div><div class="line">pa = a;</div></pre></td></tr></table></figure>
+<p>画图理解的时候，指针不要只画一个箭头，建议在箭头的重点把指针指向的内容用圈圈括起来，比如这个，就要把一整行都圈起来。（a[0][0],a[0][1],a[0][2]这一行）</p>
+<p>在上一次的文章中已经讲过，这里类似理解<br>pa指向的类型是三个int组成的数组</p>
+<blockquote>
+<p>a[0][0]：007FFE20 007FFE21 007FFE22 007FFE23<br>a[0][1]：007FFE24 007FFE25 007FFE26 007FFE27<br>a[0][2]：007FFE28 007FFE29 007FFE30 007FFE31</p>
+</blockquote>
+<p>那么pa就要把这十二个字节都括起来<br>当pa++时，pa的值变为007FFE32</p>
+<p>所以万变不离其宗，不管指针指向的是什么乱七八糟的玩意儿，指针的几条性质是不会变的。<br>这里可以思考一下在把一整个数组当做参数传递的时候的指针的使用</p>
+<p>下一期就谈一谈函数指针，好了，开始拖更</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/27/C/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1062,7 +1217,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
